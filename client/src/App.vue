@@ -91,7 +91,7 @@ export default {
    
     async addItem() {
       const response = await axios.post("127.0.0.1:8000/api/v1/cal", {
-        numberA: this.preNumber,
+        numberA: this.prevNumber,
         numberB:this.number,
         operator:this.type
       })
